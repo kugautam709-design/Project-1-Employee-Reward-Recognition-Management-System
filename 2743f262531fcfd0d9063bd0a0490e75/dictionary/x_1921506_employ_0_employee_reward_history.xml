@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="0a456057539f0714d9063bd0a0490e82" label=" Employee Reward History " max_length="40" name="x_1921506_employ_0_employee_reward_history" type="collection">
+        <element label="Date Given" mandatory="true" max_length="40" name="date_given" type="glide_date"/>
+        <element label="Reward Type" mandatory="true" max_length="32" name="reward_type" reference="x_1921506_employ_0_reward_catalog" type="reference"/>
+        <element label="Employee" mandatory="true" max_length="32" name="employee" reference="sys_user" type="reference"/>
+        <element label="Amount " mandatory="true" max_length="20" name="amount" type="currency"/>
+        <element choice="1" label="Quarter" mandatory="true" max_length="50" name="quarter" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Q1" sequence="100" value="q1"/>
+                <element inactive_on_update="false" label="Q2" sequence="200" value="q2"/>
+                <element inactive_on_update="false" label="Q3" sequence="300" value="q3"/>
+                <element inactive_on_update="false" label="Q4" sequence="400" value="q4"/>
+            </choice>
+        </element>
+        <element label="Reward Request" mandatory="true" max_length="32" name="reward_request" reference="x_1921506_employ_0_reward_request" type="reference"/>
+        <index name="index">
+            <element name="employee"/>
+        </index>
+        <index name="index2">
+            <element name="reward_request"/>
+        </index>
+        <index name="index3">
+            <element name="reward_type"/>
+        </index>
+    </element>
+</database>

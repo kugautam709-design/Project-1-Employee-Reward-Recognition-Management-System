@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>false</active>
+        <api_name>x_1921506_employ_0.UserAuthUtilsDepartment</api_name>
+        <caller_access>2</caller_access>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>UserAuthUtilsDepartment</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var UserAuthUtilsDepartment = Class.create();
+UserAuthUtilsDepartment.prototype = Object.extendsObject(AbstractAjaxProcessor, {
+
+    getUserDepartment: function() {
+        // FIX: Read the parameter passed from the client instead of using gs.getUserID()
+        var userId = this.getParameter('sysparm_user_id');
+		gs.info('<<<userid'+userId);
+        var userGR = new GlideRecord('sys_user');
+
+        if (userGR.get(userId)) {
+            // FIX: .department is a reference field. Use .getDisplayValue() to get the name string
+            var deptName = userGR.department.getDisplayValue();
+			gs.info('<<<deptname0'+deptName);
+            if (deptName) {
+                gs.info("<<< deptname : " + deptName);
+                return deptName;
+            }
+        }
+        return "No Department Assigned";
+    },
+
+    type: 'UserAuthUtilsDepartment'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>Ak@2026</sys_created_by>
+        <sys_created_on>2026-09-17 10:22:48</sys_created_on>
+        <sys_id>87a08803531b8314d9063bd0a0490e6e</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_name>UserAuthUtilsDepartment</sys_name>
+        <sys_package display_value="Employee Reward Management" source="x_1921506_employ_0">2743f262531fcfd0d9063bd0a0490e75</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Employee Reward Management">2743f262531fcfd0d9063bd0a0490e75</sys_scope>
+        <sys_update_name>sys_script_include_87a08803531b8314d9063bd0a0490e6e</sys_update_name>
+        <sys_updated_by>Ak@2026</sys_updated_by>
+        <sys_updated_on>2026-09-17 13:35:39</sys_updated_on>
+    </sys_script_include>
+</record_update>

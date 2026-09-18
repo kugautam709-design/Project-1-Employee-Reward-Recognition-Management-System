@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1921506_employ_0.UserDetailsAjax</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>UserDetailsAjax</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var UserDetailsAjax = Class.create();
+UserDetailsAjax.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	getDepartment:function(){
+		var user_id=this.getParameter('sysparm_user_id');
+		var gr=new GlideRecord('sys_user');
+		if(gr.get(user_id)){
+			if(gr.department.toString()){
+				return gr.department.toString();
+			}
+		}
+		return "";
+	},
+
+    type: 'UserDetailsAjax'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>Ak@2026</sys_created_by>
+        <sys_created_on>2026-09-17 13:27:15</sys_created_on>
+        <sys_id>780b28c3535f8314d9063bd0a0490e7e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>UserDetailsAjax</sys_name>
+        <sys_package display_value="Employee Reward Management" source="x_1921506_employ_0">2743f262531fcfd0d9063bd0a0490e75</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Employee Reward Management">2743f262531fcfd0d9063bd0a0490e75</sys_scope>
+        <sys_update_name>sys_script_include_780b28c3535f8314d9063bd0a0490e7e</sys_update_name>
+        <sys_updated_by>Ak@2026</sys_updated_by>
+        <sys_updated_on>2026-09-17 13:29:31</sys_updated_on>
+    </sys_script_include>
+</record_update>

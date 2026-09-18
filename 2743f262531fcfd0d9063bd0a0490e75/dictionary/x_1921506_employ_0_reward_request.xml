@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="0a23173e53538314d9063bd0a0490e3d" label="Reward Request" max_length="40" name="x_1921506_employ_0_reward_request" type="collection">
+        <element label="Current Approver" max_length="32" name="current_approver" reference="sys_user" type="reference"/>
+        <element default="0" label="Resubmission Count" max_length="40" name="resubmission_count" type="integer"/>
+        <element default="javascript:getNextObjNumberPadded();" dynamic_default_value="fdcb83a85f220100a9ad2572f2b4773c" label="Number" max_length="50" name="number" read_only="true" read_only_option="display_read_only" type="string" use_dynamic_default="true"/>
+        <element label="Approved By " max_length="32" name="approved_by" reference="sys_user" type="reference"/>
+        <element label="Reward Type" mandatory="true" max_length="32" name="reward_type" reference="x_1921506_employ_0_reward_catalog" type="reference"/>
+        <element label="Year" mandatory="true" max_length="40" name="year" type="integer"/>
+        <element label="Rejection Comment" max_length="4000" name="rejection_comment" type="string"/>
+        <element default="0" label="Leaves Day" max_length="40" name="leaves_day" type="integer"/>
+        <element label="Quarter" mandatory="true" max_length="50" name="quarter" type="string"/>
+        <element label="Employee" mandatory="true" max_length="32" name="employee" reference="sys_user" type="reference"/>
+        <element default="javascript:gs.getUserID();" dynamic_default_value="90d1921e5f510100a9ad2572f2b477fe" label="Requested By " mandatory="true" max_length="32" name="requested_by" reference="sys_user" type="reference" use_dynamic_default="true"/>
+        <element label="Justification" mandatory="true" max_length="4000" name="justification" type="string"/>
+        <element label="Status" max_length="50" name="status" type="string"/>
+        <element label="RITM" max_length="32" name="ritm" reference="sc_req_item" type="reference"/>
+        <element default="javascript:gs.getUser().getDepartmentID();" label="Department" mandatory="true" max_length="32" name="department" reference="cmn_department" type="reference"/>
+        <element label="Amount" max_length="20" name="amount" type="currency"/>
+        <element label="Date Approved" max_length="40" name="date_approved" type="glide_date_time"/>
+        <index name="index">
+            <element name="approved_by"/>
+        </index>
+        <index name="index2">
+            <element name="current_approver"/>
+        </index>
+        <index name="index3">
+            <element name="department"/>
+        </index>
+        <index name="index4">
+            <element name="employee"/>
+        </index>
+        <index name="index5">
+            <element name="requested_by"/>
+        </index>
+        <index name="index6">
+            <element name="reward_type"/>
+        </index>
+        <index name="index7">
+            <element name="ritm"/>
+        </index>
+    </element>
+</database>

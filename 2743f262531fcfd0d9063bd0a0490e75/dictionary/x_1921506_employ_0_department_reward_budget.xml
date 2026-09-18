@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="f1479cd7531f0714d9063bd0a0490e73" label="Department Reward Budget" max_length="40" name="x_1921506_employ_0_department_reward_budget" type="collection">
+        <element choice="3" label="Qaurter" mandatory="true" max_length="50" name="qaurter" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Q2" sequence="200" value="q2"/>
+                <element inactive_on_update="false" label="Q4" sequence="400" value="q4"/>
+                <element inactive_on_update="false" label="Q3" sequence="300" value="q3"/>
+                <element inactive_on_update="false" label="Q1" sequence="100" value="q1"/>
+            </choice>
+        </element>
+        <element label="Consumed Budget" max_length="20" name="consumed_budget" type="currency"/>
+        <element label="Department" mandatory="true" max_length="32" name="department" reference="cmn_department" type="reference"/>
+        <element label="Allocated Budget" mandatory="true" max_length="20" name="allocated_budget" type="currency"/>
+        <element label="Remaining Budget" max_length="20" name="remaining_budget" read_only="true" read_only_option="display_read_only" type="currency"/>
+        <element default="2026" label="Year" mandatory="true" max_length="40" name="year" type="integer"/>
+        <index name="index">
+            <element name="department"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="quarter" table="x_1921506_employ_0_employee_reward_history" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>quarter</element>
+            <name>x_1921506_employ_0_employee_reward_history</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>Ak@2026</sys_created_by>
+            <sys_created_on>2026-09-18 07:56:11</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>quarter</sys_name>
+            <sys_package display_value="Employee Reward Management" source="x_1921506_employ_0">2743f262531fcfd0d9063bd0a0490e75</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Employee Reward Management">2743f262531fcfd0d9063bd0a0490e75</sys_scope>
+            <sys_update_name>sys_choice_x_1921506_employ_0_employee_reward_history_quarter</sys_update_name>
+            <sys_updated_by>Ak@2026</sys_updated_by>
+            <sys_updated_on>2026-09-18 07:56:11</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>quarter</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Q1</label>
+            <language>en</language>
+            <name>x_1921506_employ_0_employee_reward_history</name>
+            <sequence>100</sequence>
+            <synonyms/>
+            <sys_created_by>Ak@2026</sys_created_by>
+            <sys_created_on>2026-09-18 07:56:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Ak@2026</sys_updated_by>
+            <sys_updated_on>2026-09-18 07:56:11</sys_updated_on>
+            <value>q1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>quarter</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Q2</label>
+            <language>en</language>
+            <name>x_1921506_employ_0_employee_reward_history</name>
+            <sequence>200</sequence>
+            <synonyms/>
+            <sys_created_by>Ak@2026</sys_created_by>
+            <sys_created_on>2026-09-18 07:56:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Ak@2026</sys_updated_by>
+            <sys_updated_on>2026-09-18 07:56:35</sys_updated_on>
+            <value>q2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>quarter</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Q3</label>
+            <language>en</language>
+            <name>x_1921506_employ_0_employee_reward_history</name>
+            <sequence>300</sequence>
+            <synonyms/>
+            <sys_created_by>Ak@2026</sys_created_by>
+            <sys_created_on>2026-09-18 07:57:02</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Ak@2026</sys_updated_by>
+            <sys_updated_on>2026-09-18 07:57:02</sys_updated_on>
+            <value>q3</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>quarter</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Q4</label>
+            <language>en</language>
+            <name>x_1921506_employ_0_employee_reward_history</name>
+            <sequence>400</sequence>
+            <synonyms/>
+            <sys_created_by>Ak@2026</sys_created_by>
+            <sys_created_on>2026-09-18 07:57:20</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Ak@2026</sys_updated_by>
+            <sys_updated_on>2026-09-18 07:57:20</sys_updated_on>
+            <value>q4</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

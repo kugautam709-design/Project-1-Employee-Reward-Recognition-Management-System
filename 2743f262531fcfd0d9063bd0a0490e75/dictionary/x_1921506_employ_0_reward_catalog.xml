@@ -5,8 +5,8 @@
         <element label="Active" max_length="40" name="active" type="boolean"/>
         <element label="Required Finance Approval" max_length="40" name="required_finance_approval" type="boolean"/>
         <element label="Description" max_length="255" name="description" type="string"/>
-        <element default="0" label="u_min_value " max_length="20" name="u_min_value" type="currency"/>
-        <element choice="3" label="Reward Type" mandatory="true" max_length="40" name="reward_type" type="string">
+        <element default="0" label="Min Value" max_length="20" name="u_min_value" type="currency"/>
+        <element choice="3" display="true" label="Reward Type" mandatory="true" max_length="40" name="reward_type" type="string">
             <choice>
                 <element inactive_on_update="false" label="Extra leavae Credit" sequence="400" value="extra_leave_credit"/>
                 <element inactive_on_update="false" label="Voucher - Gift Card" sequence="300" value="voucher_gift_card"/>

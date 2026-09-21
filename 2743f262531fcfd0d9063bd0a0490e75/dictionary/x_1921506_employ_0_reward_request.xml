@@ -4,17 +4,36 @@
         <element default="0" label="Resubmission Count" max_length="40" name="resubmission_count" type="integer"/>
         <element default="javascript:getNextObjNumberPadded();" dynamic_default_value="fdcb83a85f220100a9ad2572f2b4773c" label="Number" max_length="50" name="number" read_only="true" read_only_option="display_read_only" type="string" use_dynamic_default="true"/>
         <element label="Approved By " max_length="32" name="approved_by" reference="sys_user" type="reference"/>
-        <element label="Reward Type" mandatory="true" max_length="32" name="reward_type" reference="x_1921506_employ_0_reward_catalog" type="reference"/>
-        <element label="Year" mandatory="true" max_length="40" name="year" type="integer"/>
+        <element attributes="ref_ac_columns_search=true" label="Reward Type" mandatory="true" max_length="32" name="reward_type" reference="x_1921506_employ_0_reward_catalog" type="reference"/>
+        <element attributes="format=none&#13;&#10;" default="2026" label="Year" mandatory="true" max_length="40" name="year" type="integer"/>
         <element label="Rejection Comment" max_length="4000" name="rejection_comment" type="string"/>
         <element default="0" label="Leaves Day" max_length="40" name="leaves_day" type="integer"/>
-        <element label="Quarter" mandatory="true" max_length="50" name="quarter" type="string"/>
+        <element choice="1" choice_table="x_1921506_employ_0_reward_request" label="Quarter" mandatory="true" max_length="50" name="quarter" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Q2" sequence="1" value="q2"/>
+                <element inactive_on_update="false" label="Q3" sequence="2" value="q3"/>
+                <element inactive_on_update="false" label="Q1" sequence="0" value="q1"/>
+                <element inactive_on_update="false" label="Q4" sequence="3" value="q4"/>
+            </choice>
+        </element>
         <element label="Employee" mandatory="true" max_length="32" name="employee" reference="sys_user" type="reference"/>
-        <element default="javascript:gs.getUserID();" dynamic_default_value="90d1921e5f510100a9ad2572f2b477fe" label="Requested By " mandatory="true" max_length="32" name="requested_by" reference="sys_user" type="reference" use_dynamic_default="true"/>
+        <element default="javascript:gs.getUserID();" dynamic_default_value="90d1921e5f510100a9ad2572f2b477fe" label="Requested By " mandatory="true" max_length="32" name="requested_by" read_only="true" read_only_option="display_read_only" reference="sys_user" type="reference" use_dynamic_default="true"/>
         <element label="Justification" mandatory="true" max_length="4000" name="justification" type="string"/>
-        <element label="Status" max_length="50" name="status" type="string"/>
+        <element choice="3" label="Status" max_length="50" name="status" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Pending Finance Approval" sequence="400" value="pending_dept_head"/>
+                <element inactive_on_update="false" label="Rejected - Final" sequence="7" value="rejected_final"/>
+                <element inactive_on_update="false" label="Approved" sequence="5" value="approved"/>
+                <element inactive_on_update="false" label="Draft" sequence="0" value="draft"/>
+                <element inactive_on_update="false" label="Pending Dept Head Approval" sequence="2" value="pending_dept_head"/>
+                <element inactive_on_update="false" label="Pending HR Approval" sequence="4" value="pending_hr"/>
+                <element inactive_on_update="false" label="Rejected - Editable" sequence="6" value="rejected_editable"/>
+                <element inactive_on_update="false" label="Pending Manager" sequence="1" value="pending_manager"/>
+                <element inactive_on_update="false" label="Rejected - Final" sequence="900" value="rejected_final"/>
+            </choice>
+        </element>
         <element label="RITM" max_length="32" name="ritm" reference="sc_req_item" type="reference"/>
-        <element default="javascript:gs.getUser().getDepartmentID();" label="Department" mandatory="true" max_length="32" name="department" reference="cmn_department" type="reference"/>
+        <element default="javascript:gs.getUser().getDepartmentID();" label="Department" max_length="32" name="department" read_only="true" read_only_option="display_read_only" reference="cmn_department" type="reference"/>
         <element label="Amount" max_length="20" name="amount" type="currency"/>
         <element label="Date Approved" max_length="40" name="date_approved" type="glide_date_time"/>
         <index name="index">

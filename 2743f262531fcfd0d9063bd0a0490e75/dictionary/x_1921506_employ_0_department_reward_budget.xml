@@ -12,7 +12,7 @@
         <element label="Department" mandatory="true" max_length="32" name="department" reference="cmn_department" type="reference"/>
         <element label="Allocated Budget" mandatory="true" max_length="20" name="allocated_budget" type="currency"/>
         <element label="Remaining Budget" max_length="20" name="remaining_budget" read_only="true" read_only_option="display_read_only" type="currency"/>
-        <element default="2026" label="Year" mandatory="true" max_length="40" name="year" type="integer"/>
+        <element attributes="format=none" default="2026" label="Year" mandatory="true" max_length="40" name="year" type="integer"/>
         <index name="index">
             <element name="department"/>
         </index>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>amount</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Amount  non NegatValue in Reward Request</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+
+  
+    var gaRaw = g_form.getValue('amount'); 
+    
+    
+    var gaNumeric = gaRaw.replace(/[^0-9.-]/g, '');
+    
+    
+    var ga = parseFloat(gaNumeric);
+
+   
+    if (!isNaN(ga) && ga < 0) { 
+        g_form.addErrorMessage('Amount Value Cannot Be Negative'); 
+        
+       
+        g_form.setValue('amount', ''); 
+    }
+   
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>Ak@2026</sys_created_by>
+        <sys_created_on>2026-09-18 11:31:53</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>572a1dd753574714d9063bd0a0490ec5</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Amount  non NegatValue in Reward Request</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Employee Reward Management" source="x_1921506_employ_0">2743f262531fcfd0d9063bd0a0490e75</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Reward Management">2743f262531fcfd0d9063bd0a0490e75</sys_scope>
+        <sys_update_name>sys_script_client_572a1dd753574714d9063bd0a0490ec5</sys_update_name>
+        <sys_updated_by>Ak@2026</sys_updated_by>
+        <sys_updated_on>2026-09-18 11:33:20</sys_updated_on>
+        <table>x_1921506_employ_0_reward_request</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

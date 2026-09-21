@@ -10,9 +10,9 @@
 	return '';  // return the calculated value
 
 })(current);]]></calculation>
-        <choice>0</choice>
+        <choice>1</choice>
         <choice_field/>
-        <choice_table/>
+        <choice_table>x_1921506_employ_0_reward_request</choice_table>
         <column_label>Quarter</column_label>
         <comments/>
         <create_roles/>
@@ -59,7 +59,7 @@
         <sys_scope display_value="Employee Reward Management">2743f262531fcfd0d9063bd0a0490e75</sys_scope>
         <sys_update_name>sys_dictionary_x_1921506_employ_0_reward_request_quarter</sys_update_name>
         <sys_updated_by>Ak@2026</sys_updated_by>
-        <sys_updated_on>2026-09-18 06:31:21</sys_updated_on>
+        <sys_updated_on>2026-09-18 12:26:10</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <u_name_replica/>

@@ -2,7 +2,8 @@
     <sys_dictionary action="INSERT_OR_UPDATE" element="year" table="x_1921506_employ_0_reward_request">
         <active>true</active>
         <array>false</array>
-        <attributes/>
+        <attributes>format=none&#13;
+</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -16,7 +17,7 @@
         <column_label>Year</column_label>
         <comments/>
         <create_roles/>
-        <default_value/>
+        <default_value>2026</default_value>
         <defaultsort/>
         <delete_roles/>
         <dependent/>
@@ -59,7 +60,7 @@
         <sys_scope display_value="Employee Reward Management">2743f262531fcfd0d9063bd0a0490e75</sys_scope>
         <sys_update_name>sys_dictionary_x_1921506_employ_0_reward_request_year</sys_update_name>
         <sys_updated_by>Ak@2026</sys_updated_by>
-        <sys_updated_on>2026-09-18 05:36:59</sys_updated_on>
+        <sys_updated_on>2026-09-20 11:55:30</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <u_name_replica/>

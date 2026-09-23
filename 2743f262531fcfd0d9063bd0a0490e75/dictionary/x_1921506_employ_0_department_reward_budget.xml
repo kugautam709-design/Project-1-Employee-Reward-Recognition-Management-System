@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="f1479cd7531f0714d9063bd0a0490e73" label="Department Reward Budget" max_length="40" name="x_1921506_employ_0_department_reward_budget" type="collection">
-        <element choice="3" label="Qaurter" mandatory="true" max_length="50" name="qaurter" type="string">
+        <element choice="3" label="Quarter" mandatory="true" max_length="50" name="qaurter" type="string">
             <choice>
                 <element inactive_on_update="false" label="Q2" sequence="200" value="q2"/>
                 <element inactive_on_update="false" label="Q4" sequence="400" value="q4"/>

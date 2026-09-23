@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="io_set_item">
+    <io_set_item action="INSERT_OR_UPDATE">
+        <order>100</order>
+        <sc_cat_item display_value="Voucher / Gift Card Request">da385ad053e38f14d9063bd0a0490e4f</sc_cat_item>
+        <sys_class_name>io_set_item</sys_class_name>
+        <sys_created_by>Ak@2026</sys_created_by>
+        <sys_created_on>2026-09-21 18:35:37</sys_created_on>
+        <sys_id>26381a5453e38f14d9063bd0a0490eb2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Reward Common Variables.Copy of Employee Reward &amp; Recognition Management System</sys_name>
+        <sys_package display_value="Employee Reward Management" source="x_1921506_employ_0">2743f262531fcfd0d9063bd0a0490e75</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Reward Management">2743f262531fcfd0d9063bd0a0490e75</sys_scope>
+        <sys_update_name>io_set_item_26381a5453e38f14d9063bd0a0490eb2</sys_update_name>
+        <sys_updated_by>Ak@2026</sys_updated_by>
+        <sys_updated_on>2026-09-21 18:35:37</sys_updated_on>
+        <variable_set display_value="Reward Common Variables">f017dc1453a34f14d9063bd0a0490e43</variable_set>
+    </io_set_item>
+</record_update>

@@ -1,47 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
     <sys_script_client action="INSERT_OR_UPDATE">
-        <active>false</active>
+        <active>true</active>
         <applies_extended>false</applies_extended>
         <condition/>
         <description/>
-        <field/>
+        <field>reward_type</field>
         <global>true</global>
         <isolate_script>true</isolate_script>
         <messages/>
-        <name>For populating </name>
+        <name>Mandatory only when reward type is monet</name>
         <order/>
-        <script><![CDATA[function onLoad() {
-    var ga = new GlideAjax('UserAuthUtilsDepartment');
-    ga.addParam('sysparm_name', 'getUserDepartment');
-    
-    // FIX: Uncomment this line to pass the logged-in user ID
-    ga.addParam('sysparm_user_id', g_user.userID); 
-    
-    ga.getXMLAnswer(handlerResponse);
-}
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
 
-function handlerResponse(response) {
-    var departmentName = response;
-    g_form.addInfoMessage("User Department: " + departmentName);
+  var ga = new GlideAjax('UserDetailsAjax');
+    ga.addParam('sysparm_name', 'getMinValue');
+    ga.addParam('sysparm_type', newValue);
+    ga.getXMLAnswer(handleResponse);
+
+    function handleResponse(response) {
+        var result = response;
+		
+        if(result != '') {
+			g_form.setMandatory('amount' , true);
+   
 }
-]]></script>
+	}
+}
+	]]></script>
         <sys_class_name>sys_script_client</sys_class_name>
         <sys_created_by>Ak@2026</sys_created_by>
-        <sys_created_on>2026-09-17 11:12:19</sys_created_on>
+        <sys_created_on>2026-09-23 05:38:51</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>356c4007535b8314d9063bd0a0490ea1</sys_id>
-        <sys_mod_count>7</sys_mod_count>
-        <sys_name>For populating </sys_name>
+        <sys_id>a8b7757053a38354d9063bd0a0490edd</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>Mandatory only when reward type is monet</sys_name>
         <sys_overrides/>
         <sys_package display_value="Employee Reward Management" source="x_1921506_employ_0">2743f262531fcfd0d9063bd0a0490e75</sys_package>
         <sys_policy/>
         <sys_scope display_value="Employee Reward Management">2743f262531fcfd0d9063bd0a0490e75</sys_scope>
-        <sys_update_name>sys_script_client_356c4007535b8314d9063bd0a0490ea1</sys_update_name>
+        <sys_update_name>sys_script_client_a8b7757053a38354d9063bd0a0490edd</sys_update_name>
         <sys_updated_by>Ak@2026</sys_updated_by>
-        <sys_updated_on>2026-09-22 06:07:56</sys_updated_on>
+        <sys_updated_on>2026-09-23 06:34:02</sys_updated_on>
         <table>x_1921506_employ_0_reward_request</table>
-        <type>onLoad</type>
+        <type>onChange</type>
         <ui_type>10</ui_type>
         <view/>
     </sys_script_client>

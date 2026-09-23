@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="INSERT_OR_UPDATE">
+        <inactive>false</inactive>
+        <misc>0</misc>
+        <order>500</order>
+        <published_ref/>
+        <question display_value="Quarter">6955605053274f14d9063bd0a0490e65</question>
+        <rec_misc>0</rec_misc>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>Ak@2026</sys_created_by>
+        <sys_created_on>2026-09-21 10:23:16</sys_created_on>
+        <sys_id>8c87641853274f14d9063bd0a0490e48</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Q5</sys_name>
+        <sys_package display_value="Employee Reward Management" source="x_1921506_employ_0">2743f262531fcfd0d9063bd0a0490e75</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Reward Management">2743f262531fcfd0d9063bd0a0490e75</sys_scope>
+        <sys_update_name>question_choice_8c87641853274f14d9063bd0a0490e48</sys_update_name>
+        <sys_updated_by>Ak@2026</sys_updated_by>
+        <sys_updated_on>2026-09-21 10:23:16</sys_updated_on>
+        <text>Q5</text>
+        <value>q5</value>
+    </question_choice>
+    <fx_price action="delete_multiple" query="id=8c87641853274f14d9063bd0a0490e48"/>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>misc</field>
+        <id>8c87641853274f14d9063bd0a0490e48</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>Ak@2026</sys_created_by>
+        <sys_created_on>2026-09-21 10:23:16</sys_created_on>
+        <sys_id>d287641853274f14d9063bd0a0490e87</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Ak@2026</sys_updated_by>
+        <sys_updated_on>2026-09-21 10:23:16</sys_updated_on>
+        <table>question_choice</table>
+        <type>calculated</type>
+    </fx_price>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>rec_misc</field>
+        <id>8c87641853274f14d9063bd0a0490e48</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>Ak@2026</sys_created_by>
+        <sys_created_on>2026-09-21 10:23:16</sys_created_on>
+        <sys_id>9a87641853274f14d9063bd0a0490e86</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Ak@2026</sys_updated_by>
+        <sys_updated_on>2026-09-21 10:23:16</sys_updated_on>
+        <table>question_choice</table>
+        <type>calculated</type>
+    </fx_price>
+</record_update>

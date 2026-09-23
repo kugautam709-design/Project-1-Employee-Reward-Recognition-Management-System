@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <cleared>false</cleared>
+        <disabled>true</disabled>
+        <field>amount</field>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>Ak@2026</sys_created_by>
+        <sys_created_on>2026-09-21 14:09:15</sys_created_on>
+        <sys_id>2a3b191453eb4f14d9063bd0a0490e73</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>amount</sys_name>
+        <sys_package display_value="Employee Reward Management" source="x_1921506_employ_0">2743f262531fcfd0d9063bd0a0490e75</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Reward Management">2743f262531fcfd0d9063bd0a0490e75</sys_scope>
+        <sys_update_name>sys_ui_policy_action_2a3b191453eb4f14d9063bd0a0490e73</sys_update_name>
+        <sys_updated_by>Ak@2026</sys_updated_by>
+        <sys_updated_on>2026-09-21 14:09:15</sys_updated_on>
+        <table>x_1921506_employ_0_reward_request</table>
+        <ui_policy display_value=" Lock Fields After Submission   current.u_status != Draft ">a47a5d9053eb4f14d9063bd0a0490e03</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <visible>ignore</visible>
+    </sys_ui_policy_action>
+    <sys_translated_text action="delete_multiple" query="documentkey=2a3b191453eb4f14d9063bd0a0490e73"/>
+</record_update>

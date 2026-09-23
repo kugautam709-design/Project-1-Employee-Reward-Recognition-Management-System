@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="catalog_script_client">
+    <catalog_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_catalog>true</applies_catalog>
+        <applies_extended>false</applies_extended>
+        <applies_req_item>true</applies_req_item>
+        <applies_sc_task>true</applies_sc_task>
+        <applies_target_record>true</applies_target_record>
+        <applies_to>set</applies_to>
+        <cat_item/>
+        <cat_variable/>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Validate Amount  Within Range</name>
+        <order/>
+        <published_ref/>
+        <script><![CDATA[function onSubmit() {
+
+    if (g_scratchpad.isVerified === true) {
+        return true; // Allow final submission
+    }
+
+    var ga = new GlideAjax('UserDetailsAjax');
+    ga.addParam('sysparm_name', 'getRange');
+    ga.addParam('sysparm_reward_type', g_form.getValue('reward_type'));
+    ga.addParam('sysparm_amount', g_form.getValue('amount'));
+
+    ga.getXMLAnswer(function(response) {
+        if (response === 'true') {
+            g_scratchpad.isVerified = true;
+            g_form.submit();
+        } else {
+            g_form.addErrorMessage('Validation failed. Please correct the value.');
+        }
+    });
+    return false;
+}]]></script>
+        <sys_class_name>catalog_script_client</sys_class_name>
+        <sys_created_by>Ak@2026</sys_created_by>
+        <sys_created_on>2026-09-22 13:05:25</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>16a0166053270354d9063bd0a0490e34</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>Validate Amount  Within Range</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Employee Reward Management" source="x_1921506_employ_0">2743f262531fcfd0d9063bd0a0490e75</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Reward Management">2743f262531fcfd0d9063bd0a0490e75</sys_scope>
+        <sys_update_name>catalog_script_client_16a0166053270354d9063bd0a0490e34</sys_update_name>
+        <sys_updated_by>Ak@2026</sys_updated_by>
+        <sys_updated_on>2026-09-23 07:38:36</sys_updated_on>
+        <table/>
+        <type>onSubmit</type>
+        <ui_type>10</ui_type>
+        <va_supported>false</va_supported>
+        <variable_set display_value="Reward Common Variables">f017dc1453a34f14d9063bd0a0490e43</variable_set>
+        <view/>
+    </catalog_script_client>
+</record_update>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item/>
+        <catalog_variable>IO:591f541453e34f14d9063bd0a0490e66</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>true</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>Ak@2026</sys_created_by>
+        <sys_created_on>2026-09-22 09:49:43</sys_created_on>
+        <sys_id>2c69696c53afcf14d9063bd0a0490e30</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>leave_days</sys_name>
+        <sys_package display_value="Employee Reward Management" source="x_1921506_employ_0">2743f262531fcfd0d9063bd0a0490e75</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Reward Management">2743f262531fcfd0d9063bd0a0490e75</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_2c69696c53afcf14d9063bd0a0490e30</sys_update_name>
+        <sys_updated_by>Ak@2026</sys_updated_by>
+        <sys_updated_on>2026-09-22 09:49:43</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Show Leave Days Field reward_type = Extra Leave Credit Show: leave_days (mandatory). Hide: amount">39c8252c53afcf14d9063bd0a0490e1a</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <variable>leave_days</variable>
+        <variable_set display_value="Reward Common Variables">f017dc1453a34f14d9063bd0a0490e43</variable_set>
+        <visible>ignore</visible>
+    </catalog_ui_policy_action>
+    <sys_translated_text action="delete_multiple" query="documentkey=2c69696c53afcf14d9063bd0a0490e30"/>
+</record_update>

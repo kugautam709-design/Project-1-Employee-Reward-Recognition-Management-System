@@ -13,7 +13,7 @@
         <choice>3</choice>
         <choice_field/>
         <choice_table/>
-        <column_label>Qaurter</column_label>
+        <column_label>Quarter</column_label>
         <comments/>
         <create_roles/>
         <default_value/>
@@ -53,13 +53,13 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>Ak@2026</sys_created_by>
         <sys_created_on>2026-09-18 06:43:36</sys_created_on>
-        <sys_name>Qaurter</sys_name>
+        <sys_name>Quarter</sys_name>
         <sys_package display_value="Employee Reward Management" source="x_1921506_employ_0">2743f262531fcfd0d9063bd0a0490e75</sys_package>
         <sys_policy/>
         <sys_scope display_value="Employee Reward Management">2743f262531fcfd0d9063bd0a0490e75</sys_scope>
         <sys_update_name>sys_dictionary_x_1921506_employ_0_department_reward_budget_qaurter</sys_update_name>
         <sys_updated_by>Ak@2026</sys_updated_by>
-        <sys_updated_on>2026-09-18 06:43:36</sys_updated_on>
+        <sys_updated_on>2026-09-23 06:46:12</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <u_name_replica/>

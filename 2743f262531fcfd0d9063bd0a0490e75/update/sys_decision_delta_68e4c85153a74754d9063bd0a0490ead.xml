@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_decision_delta">
+    <sys_decision_delta action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>false</active>
+        <answer_table>sys_decision_multi_result</answer_table>
+        <answer_type>reference</answer_type>
+        <delta/>
+        <description/>
+        <enable_publishing>false</enable_publishing>
+        <label/>
+        <name>Approval Metrices delta</name>
+        <parent display_value="Approval Metrices">8f37363853ab8354d9063bd0a0490ec4</parent>
+        <reference_qualifier/>
+        <status>draft</status>
+        <sys_class_name>sys_decision_delta</sys_class_name>
+        <sys_created_by>Ak@2026</sys_created_by>
+        <sys_created_on>2026-09-24 10:25:47</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>68e4c85153a74754d9063bd0a0490ead</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Approval Metrices delta</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Employee Reward Management" source="x_1921506_employ_0">2743f262531fcfd0d9063bd0a0490e75</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Reward Management">2743f262531fcfd0d9063bd0a0490e75</sys_scope>
+        <sys_update_name>sys_decision_delta_68e4c85153a74754d9063bd0a0490ead</sys_update_name>
+        <sys_updated_by>Ak@2026</sys_updated_by>
+        <sys_updated_on>2026-09-24 10:25:47</sys_updated_on>
+    </sys_decision_delta>
+</record_update>

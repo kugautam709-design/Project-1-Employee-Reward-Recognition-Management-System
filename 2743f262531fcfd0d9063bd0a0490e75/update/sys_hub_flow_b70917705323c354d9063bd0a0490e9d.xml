@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
+        <annotation/>
+        <attributes>labelCacheCleanUpExecuted=true</attributes>
+        <authored_on_release_version>29000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>34reward_request_orchestrato</internal_name>
+        <label_cache>[{"name":"trigger.request_item","label":"Trigger - Service Catalog➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","parent_table_name":null,"column_name":null,"choices":[{"label":null,"value":null,"order":0.0}],"usedInstances":{"f88c8a17-3c7b-4c36-baba-a13a47c0a835":["requested_item"],"ba0b3907-5bfc-476d-90bf-0ac13ef9a888":["record"]},"attributes":{"default_search_field":"number"}},{"name":"f88c8a17-3c7b-4c36-baba-a13a47c0a835.requested_by","label":"1➛requested_by","reference":"sys_user","reference_display":"requested_by","type":"reference","base_type":"reference","parent_table_name":null,"column_name":null,"choices":null,"usedInstances":{},"attributes":{"catalogType":"8","catalogTypeLabel":"Reference"}},{"name":"f88c8a17-3c7b-4c36-baba-a13a47c0a835.employee.manager","label":"1➛employee➛Manager","reference":"sys_user","reference_display":"Manager","type":"reference","base_type":"reference","parent_table_name":"sys_user","column_name":"manager","choices":[{"label":null,"value":null,"order":0.0}],"usedInstances":{"2ff66cd0-7aed-4de8-9717-6c19d98ebdf3":["condition"]},"attributes":null}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <master_snapshot_digest/>
+        <name>"Reward Request Orchestrato</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>Ak@2026</sys_created_by>
+        <sys_created_on>2026-09-23 12:35:50</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b70917705323c354d9063bd0a0490e9d</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_name>"Reward Request Orchestrato</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Employee Reward Management" source="x_1921506_employ_0">2743f262531fcfd0d9063bd0a0490e75</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Reward Management">2743f262531fcfd0d9063bd0a0490e75</sys_scope>
+        <sys_update_name>sys_hub_flow_b70917705323c354d9063bd0a0490e9d</sys_update_name>
+        <sys_updated_by>Ak@2026</sys_updated_by>
+        <sys_updated_on>2026-09-25 05:35:25</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record>66fb8c2553abc754d9063bd0a0490edc</version_record>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=b70917705323c354d9063bd0a0490e9d"/>
+    <sys_variable_value action="delete_multiple" query="document_key=b70917705323c354d9063bd0a0490e9d"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=b70917705323c354d9063bd0a0490e9d"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=b70917705323c354d9063bd0a0490e9d^sys_idNOT INff0957705323c354d9063bd0a0490e75"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>b70917705323c354d9063bd0a0490e9d</id>
+        <name>"Reward Request Orchestrato</name>
+        <sys_created_by>Ak@2026</sys_created_by>
+        <sys_created_on>2026-09-23 12:35:50</sys_created_on>
+        <sys_id>ff0957705323c354d9063bd0a0490e75</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>Ak@2026</sys_updated_by>
+        <sys_updated_on>2026-09-23 12:35:50</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=ff0957705323c354d9063bd0a0490e75"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=b70917705323c354d9063bd0a0490e9d^sys_idNOT IN51291b705323c354d9063bd0a0490ebf,69295b705323c354d9063bd0a0490e0e"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>default_search_field=number,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>request_item</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Request Item</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="&quot;Reward Request Orchestrato">b70917705323c354d9063bd0a0490e9d</model>
+        <model_id>b70917705323c354d9063bd0a0490e9d</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_b70917705323c354d9063bd0a0490e9d</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference display_value="" name="sc_req_item">sc_req_item</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>Ak@2026</sys_created_by>
+        <sys_created_on>2026-09-23 12:36:13</sys_created_on>
+        <sys_id>51291b705323c354d9063bd0a0490ebf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Employee Reward Management">2743f262531fcfd0d9063bd0a0490e75</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Ak@2026</sys_updated_by>
+        <sys_updated_on>2026-09-23 12:36:13</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <u_name_replica/>
+        <u_name_user/>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=51291b705323c354d9063bd0a0490ebf"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>sc_req_item</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="&quot;Reward Request Orchestrato">b70917705323c354d9063bd0a0490e9d</model>
+        <model_id>b70917705323c354d9063bd0a0490e9d</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_b70917705323c354d9063bd0a0490e9d</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>true</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>Ak@2026</sys_created_by>
+        <sys_created_on>2026-09-23 12:36:14</sys_created_on>
+        <sys_id>69295b705323c354d9063bd0a0490e0e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Employee Reward Management">2743f262531fcfd0d9063bd0a0490e75</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Ak@2026</sys_updated_by>
+        <sys_updated_on>2026-09-23 12:36:14</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <u_name_replica/>
+        <u_name_user/>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=69295b705323c354d9063bd0a0490e0e"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=b70917705323c354d9063bd0a0490e9d"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b70917705323c354d9063bd0a0490e9d"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=b70917705323c354d9063bd0a0490e9d^sys_idNOT INfa2bdb745323c354d9063bd0a0490e6d"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="&quot;Reward Request Orchestrato">b70917705323c354d9063bd0a0490e9d</flow>
+        <generation_source/>
+        <name>Service Catalog</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>Ak@2026</sys_created_by>
+        <sys_created_on>2026-09-23 12:45:03</sys_created_on>
+        <sys_id>fa2bdb745323c354d9063bd0a0490e6d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>Ak@2026</sys_updated_by>
+        <sys_updated_on>2026-09-23 12:45:03</sys_updated_on>
+        <trigger_definition display_value="Service Catalog">c43a1011c36813002841b63b12d3ae15</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/61U22obMRD9FaOnFrawtpu49ltwCRjcBuI0LyEsY2nWFtFKG102cU3+vRrvxU67KYX0aaW5nplztHd7pmCNis3YddCDS2WeBgvNEia1R6tB3exKjE6+NZJjtNeHpXSeze72LF/hY0AdXbNPw4Tlt6ACxefG4saaoEXMyZcnLXJqIeP3VcSigA3l0XmFCrlHwWY5KIfR8sOd3r5J56TeNIaX5G0Ua+APf0dxjBh8EJhDUP7jO/HcJ6wALcAbuzsGWVPcYFEq8NgZjRVo2WyYpgmrCPJq5xai7qqhoP426IywZpJIqZq54lFIF4vtbo8WvpVKWNSRlwihBBsreKq/78hcSv3QFyyp6Xk6TflkNJ1MRul4nKb52TrnOeeTL8P0fHg2jVn9UumF6n/TDd1bAuat8XQB+OxRi5O9/rlEiyCutDoatnGwep4Cnp38GTt+TikuR1vLgXzdNWuW1vD6FTysvA3cB9vtkJC5g7TVv8ul6tNbM1xKAu2r9eoBVH3vpl0PSarpNv//AIfvBjgigPXqrkovTVQVGxPnsFaU43auVoZFHlMyb+VmExNjklGh0N/7BNSgPxF4cJFBLEklRHv7slZb83TdUnwp9QFS41SGg+pu4GPndfC0vz0DUUHMIOlHESB7SQjoXIFzDaBaO9ljoBqHR9d2zw4zHlK4laW/4F5W2P0BfgFbqq2vVgUAAA==</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>service_catalog</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=b70917705323c354d9063bd0a0490e9d^sys_idNOT IN5e5bd3b45323c354d9063bd0a0490e7a"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Get Catalog Variables">330ba3abc31013002841b63b12d3aee8</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="&quot;Reward Request Orchestrato">b70917705323c354d9063bd0a0490e9d</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>Ak@2026</sys_created_by>
+        <sys_created_on>2026-09-23 12:45:50</sys_created_on>
+        <sys_id>5e5bd3b45323c354d9063bd0a0490e7a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Employee Reward Management">2743f262531fcfd0d9063bd0a0490e75</sys_scope>
+        <sys_updated_by>Ak@2026</sys_updated_by>
+        <sys_updated_on>2026-09-23 12:57:53</sys_updated_on>
+        <ui_id>f88c8a17-3c7b-4c36-baba-a13a47c0a835</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1V227jNhD9FUPPhkHdbMlv2ywCFGi7QLzYl8WCoMiRTZS6hKTsTQP/e4e62I7lOAnQLLBtHzUXzpyZOUdfHz0pvKW3yEjGQpbx0Cd+SEiQRH42DzM/ECGDfOFNvZIVgJGcWaaqNd0yLVmmwKBry1TjfGGaLHySRnHIwij3I5ESfEMQRqKUQB4vpYWCVrWVVUlL2E3DCBZx4vM4hJyMEjgbJWQgEj+Kk8sVgsUoIUj8VJBnE/JRwhyiNCXpMwn5fJQQp34eR9hUCBcS5uOEBScRcJ/EYbAYJ4TjlqKMxCwSyeUKXIwxpHE8J/EzFebjPbAYEsYd6EsJQXSegDsX0tSKPXz5f/X/udXzjVRCQ+ktv36bejXTqAwWtLd8PHO9VloUy0Bh6E2nLZMvJ9pyRXbsQ+1cRjVmkzX8T7C98bf+vZXzTH4ZXJUWrstg6sF3C6UAbC9nysDUK1gpmK30w8GigYlPpToaNrK0+Kbngr8b+ReW9gNCiAvNATFz6NyHT9pzpDPnHxHCyuqG20b3oXxTSY5Y2mkJyFmj7M2prQv41E6/S7EOfZ9dqaYo/+gG5B0eGCiJlsZgE1A7rK75Hkm+2lS7u6HLW1m2Y+mdquJMHb6YtVpmjXX94K/C0FyhCcrjHvAmoJ2k16ZgUVBQYDlasLqW5ZrWutrKtgR2XMzWCj9muap22JqR63LGuIM3wwWw2S3aP7bm4Qh+x2cw2S1AANVNaWUBtP3lUFniZZqtxLNcejhaV16WXDUYWeAopMYqh1bBmmOYG81JE6DpTneVDiG1xhy9BWoQErctyN5lqkbjgodlnHNkjxEP5kYxY47rwbug940bbresfi2026xL4VrW9gNOYwv9BvbT/gedXWeRf2QKtoJHZ4EOlHHNnfyk51EkBOs0KLmgcmNt/wysmNwBr9aldBAnH3ZMC7TcN2DsmwXhFVAGQfjcY5kMyvArYjETJOtBIyYrt9YX0fdacaTqU6W4O7H3MuFflwl3CK9TiTB4KhHGUjyOJw0aig8fDpWaDtIlIXl5ED+lzuQrYJpvbiUodyLtMs/V5710BVVNQ1HZns70dFc93V8pPQbx4vIcksH4DkqQX6MPsCMXdEdQEOcS8PiIc12vQc/6kDZgvx9T/+3kfrm7gdyrJisk/kxOleS5zt9OX/Ju9OV4IfdDY5c4ejd037L030LJpshauvwYUla4FSp0Vdc96H+WTYPRQTg7NrRcTcAn9/tvfwNsF/i+OQ8AAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=5e5bd3b45323c354d9063bd0a0490e7a"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=b70917705323c354d9063bd0a0490e9d"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=b70917705323c354d9063bd0a0490e9d"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=b70917705323c354d9063bd0a0490e9d"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=b70917705323c354d9063bd0a0490e9d^sys_idNOT INcaaf9f7c5323c354d9063bd0a0490e15"/>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiUniqueId=fa3e705f-7435-45b8-bd55-d414e9658da6</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>reward_request</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Reward Request</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="&quot;Reward Request Orchestrato">b70917705323c354d9063bd0a0490e9d</model>
+        <model_id>b70917705323c354d9063bd0a0490e9d</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_b70917705323c354d9063bd0a0490e9d</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>Ak@2026</sys_created_by>
+        <sys_created_on>2026-09-23 13:04:39</sys_created_on>
+        <sys_id>caaf9f7c5323c354d9063bd0a0490e15</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Employee Reward Management">2743f262531fcfd0d9063bd0a0490e75</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Ak@2026</sys_updated_by>
+        <sys_updated_on>2026-09-23 13:04:39</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <u_name_replica/>
+        <u_name_user/>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>request_item</element>
+        <help/>
+        <hint/>
+        <label>Request Item</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_b70917705323c354d9063bd0a0490e9d</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Ak@2026</sys_created_by>
+        <sys_created_on>2026-09-23 12:36:13</sys_created_on>
+        <sys_id>25291b705323c354d9063bd0a0490ef1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Employee Reward Management" source="x_1921506_employ_0">2743f262531fcfd0d9063bd0a0490e75</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Reward Management">2743f262531fcfd0d9063bd0a0490e75</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Ak@2026</sys_updated_by>
+        <sys_updated_on>2026-09-23 12:36:13</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_b70917705323c354d9063bd0a0490e9d</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Ak@2026</sys_created_by>
+        <sys_created_on>2026-09-23 12:36:14</sys_created_on>
+        <sys_id>65295b705323c354d9063bd0a0490e42</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Employee Reward Management" source="x_1921506_employ_0">2743f262531fcfd0d9063bd0a0490e75</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Reward Management">2743f262531fcfd0d9063bd0a0490e75</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Ak@2026</sys_updated_by>
+        <sys_updated_on>2026-09-23 12:36:14</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_b70917705323c354d9063bd0a0490e9d"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_b70917705323c354d9063bd0a0490e9d"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=b70917705323c354d9063bd0a0490e9d"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=b70917705323c354d9063bd0a0490e9d"/>
+</record_update>

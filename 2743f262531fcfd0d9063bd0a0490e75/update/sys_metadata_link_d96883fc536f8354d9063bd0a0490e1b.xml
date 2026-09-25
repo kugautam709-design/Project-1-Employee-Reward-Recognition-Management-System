@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>556883fc536f8354d9063bd0a0490e1a</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_decision_question">
+    <sys_decision_question action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <answer>386843fc536f8354d9063bd0a0490e8a</answer>
+        <condition table="var__m_sys_decision_input_8f37363853ab8354d9063bd0a0490ec4">u_amountISNOTEMPTY^u_reward_type=voucher_gift_card^EQ<item endquery="false" field="u_amount" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+            <item endquery="false" field="u_reward_type" goto="false" newquery="false" operator="=" or="false" value="voucher_gift_card"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <decision_table display_value="Approval Metrices">8f37363853ab8354d9063bd0a0490ec4</decision_table>
+        <default_answer>false</default_answer>
+        <input_table>var__m_sys_decision_input_8f37363853ab8354d9063bd0a0490ec4</input_table>
+        <label>Approval Metrices_350</label>
+        <marked_for_deletion>false</marked_for_deletion>
+        <order>350</order>
+        <sys_class_name>sys_decision_question</sys_class_name>
+        <sys_created_by>Ak@2026</sys_created_by>
+        <sys_created_on>2026-09-23 11:23:01</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>556883fc536f8354d9063bd0a0490e1a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Approval Metrices_350</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Employee Reward Management" source="x_1921506_employ_0">2743f262531fcfd0d9063bd0a0490e75</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Reward Management">2743f262531fcfd0d9063bd0a0490e75</sys_scope>
+        <sys_update_name>sys_decision_question_556883fc536f8354d9063bd0a0490e1a</sys_update_name>
+        <sys_updated_by>Ak@2026</sys_updated_by>
+        <sys_updated_on>2026-09-23 11:23:01</sys_updated_on>
+    </sys_decision_question>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>Ak@2026</sys_created_by>
+        <sys_created_on>2026-09-23 11:23:01</sys_created_on>
+        <sys_id>d96883fc536f8354d9063bd0a0490e1b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Approval Metrices_350</sys_name>
+        <sys_package display_value="Employee Reward Management" source="x_1921506_employ_0">2743f262531fcfd0d9063bd0a0490e75</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Reward Management">2743f262531fcfd0d9063bd0a0490e75</sys_scope>
+        <sys_update_name>sys_metadata_link_d96883fc536f8354d9063bd0a0490e1b</sys_update_name>
+        <sys_updated_by>Ak@2026</sys_updated_by>
+        <sys_updated_on>2026-09-23 11:23:01</sys_updated_on>
+        <tablename>sys_decision_question</tablename>
+    </sys_metadata_link>
+</record_update>

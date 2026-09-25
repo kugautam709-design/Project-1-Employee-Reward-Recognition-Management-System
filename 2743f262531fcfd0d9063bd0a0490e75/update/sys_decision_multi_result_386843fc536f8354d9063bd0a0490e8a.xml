@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_decision_multi_result">
+    <sys_decision_multi_result action="INSERT_OR_UPDATE">
+        <decision_table display_value="Approval Metrices">8f37363853ab8354d9063bd0a0490ec4</decision_table>
+        <label>Reporting Manager: true, Department Head: false, Finance: false, HR Required: true, Sla Per Step: 2+2</label>
+        <result_elements/>
+        <sys_class_name>sys_decision_multi_result</sys_class_name>
+        <sys_created_by>Ak@2026</sys_created_by>
+        <sys_created_on>2026-09-23 11:22:59</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>386843fc536f8354d9063bd0a0490e8a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Reporting Manager: true, Department Head: false, Finance: false, HR Required: true, Sla Per Step: 2+2</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Employee Reward Management" source="x_1921506_employ_0">2743f262531fcfd0d9063bd0a0490e75</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Reward Management">2743f262531fcfd0d9063bd0a0490e75</sys_scope>
+        <sys_update_name>sys_decision_multi_result_386843fc536f8354d9063bd0a0490e8a</sys_update_name>
+        <sys_updated_by>Ak@2026</sys_updated_by>
+        <sys_updated_on>2026-09-23 11:22:59</sys_updated_on>
+    </sys_decision_multi_result>
+    <sys_variable_value action="delete_multiple" query="document_key=386843fc536f8354d9063bd0a0490e8a"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_decision_multi_result</document>
+        <document_key>386843fc536f8354d9063bd0a0490e8a</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Ak@2026</sys_created_by>
+        <sys_created_on>2026-09-23 11:22:59</sys_created_on>
+        <sys_id>346843fc536f8354d9063bd0a0490e8b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Ak@2026</sys_updated_by>
+        <sys_updated_on>2026-09-23 11:22:59</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Reporting Manager">5b580fbc536f8354d9063bd0a0490e68</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_decision_multi_result</document>
+        <document_key>386843fc536f8354d9063bd0a0490e8a</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Ak@2026</sys_created_by>
+        <sys_created_on>2026-09-23 11:22:59</sys_created_on>
+        <sys_id>786843fc536f8354d9063bd0a0490e8b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Ak@2026</sys_updated_by>
+        <sys_updated_on>2026-09-23 11:22:59</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Finance">bf5803fc536f8354d9063bd0a0490e8f</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_decision_multi_result</document>
+        <document_key>386843fc536f8354d9063bd0a0490e8a</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Ak@2026</sys_created_by>
+        <sys_created_on>2026-09-23 11:22:59</sys_created_on>
+        <sys_id>bc6843fc536f8354d9063bd0a0490e8b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Ak@2026</sys_updated_by>
+        <sys_updated_on>2026-09-23 11:22:59</sys_updated_on>
+        <value>1</value>
+        <variable display_value="HR Required">046803fc536f8354d9063bd0a0490ee1</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_decision_multi_result</document>
+        <document_key>386843fc536f8354d9063bd0a0490e8a</document_key>
+        <order>500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Ak@2026</sys_created_by>
+        <sys_created_on>2026-09-23 11:22:59</sys_created_on>
+        <sys_id>f06843fc536f8354d9063bd0a0490e8c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Ak@2026</sys_updated_by>
+        <sys_updated_on>2026-09-23 11:22:59</sys_updated_on>
+        <value>2+2</value>
+        <variable display_value="Sla Per Step">5c6843fc536f8354d9063bd0a0490e0d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_decision_multi_result</document>
+        <document_key>386843fc536f8354d9063bd0a0490e8a</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Ak@2026</sys_created_by>
+        <sys_created_on>2026-09-23 11:22:59</sys_created_on>
+        <sys_id>fc6843fc536f8354d9063bd0a0490e8a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Ak@2026</sys_updated_by>
+        <sys_updated_on>2026-09-23 11:22:59</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Department Head">275803fc536f8354d9063bd0a0490e57</variable>
+    </sys_variable_value>
+</record_update>
